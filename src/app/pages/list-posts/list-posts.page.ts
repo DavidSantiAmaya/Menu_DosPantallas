@@ -5,12 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { PostComponent } from '../../componets/post/post.component';
 import { post } from 'src/app/models/post-model';
+import { NavbarComponent } from 'src/app/navbar/navbar.component';
 @Component({
   selector: 'app-list-posts',
   templateUrl: './list-posts.page.html',
   styleUrls: ['./list-posts.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, PostComponent]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, PostComponent, NavbarComponent]
 })
 export class ListPostsPage implements OnInit {
 
